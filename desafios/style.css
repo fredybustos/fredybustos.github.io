@@ -1,40 +1,76 @@
 
-.navbar{
-	position: fixed;
-	top: 0;
+.position{
+	position: absolute;
+	bottom: 0;
 	width: 100%;
-	background: #273b47;
-	padding: 1em 0;
 }
-		.logotipo{
-			margin: 0 1em; 
-			padding: 0;
-		}
-		.menu{
-			display: inline-block;
-			position: absolute;
-			right: 0;
-			top: 18px;
-		}
-		.menu ul{
-			margin: 0;
-			margin-right: 1em;
-			padding: 0;
-		}
-		.menu li{
-			font-size: 20px;
-			display: inline-block;
-			padding: 1em .5em;
-		}
-		.menu a{
-			color: #fff;
-			text-decoration: none;
-			padding: 1em .5em;
-		}
+
+
+
+.footer{
+	text-align: center;
+	background: #273b47;
+	padding: 10px 0;
+}
+	.contacto a{
+		text-decoration: none;
+		color: #fff;
+		text-decoration: underline;
+		padding: 5px;
+	}
+	.contacto a{
+		display: block;
+	}
+	.contacto span{
+		display: block;
+	}
+
+
+
+
+
+.header{
+	position: relative;	
+}
+
+	.background{
+		background: url("../images/background.png");
+		background-size: cover;
+	}
+	.contenedor{
+		width: 800px;
+		margin: auto;
+		position: relative;
+	}
+	.menu{
+		font-size: 24px;
+		display: inline-block;
+		position: absolute;
+		right: 0;
+	}
+	.menu li {
+		display: inline-block;
+		margin-left: 5px;
+	}
+	.menu li:before{
+		content: '∘';
+		font-size: 50px;
+		line-height: 20px;
+		color: #fff;
+	}
+	.menu a{
+		color: #fff;
+		text-decoration: none;
+	}
+	.logotipo{
+		display: inline-block;
+		margin-left: 0;
+	}
 .container{
+	min-height: 70vh;
 	width: 90%;
 	margin: 0 auto;
-	margin-top: 7em;
+	margin-top: 1em;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -52,22 +88,4 @@
 		}
 		.post img{
 			width: 100%;
-		}
-
-.footer{
-	padding: 1em 0;
-	width: 100%;
-	text-align: center;
-	background: #273b47;
-	
-}
-		.contacto a{
-			text-decoration: none;
-			color: #fff;
-			text-decoration: underline;
-			display: block;
-			margin: 1em;
-		}
-		.contacto span{
-			display: block;
 		}

@@ -200,6 +200,20 @@ input:focus, textarea:focus{
 	margin: 50px 0;
 }
 
+.beatles p{
+	border: 1px solid  #1f313c;
+	padding: 1em;
+}
+.beatles-cont{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+		.penta{
+			border: 1px solid  #1f313c;
+			margin: 1em 0; 
+		}
+
 
 
 

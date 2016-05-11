@@ -1,4 +1,4 @@
-body, p{
+body{
 	margin: 0;
 	padding: 0;
 	background: #efeff4;
@@ -21,52 +21,65 @@ body, p{
 	bottom: 0;
 	width: 100%;
 }
-.header{
-	background: #273b47;
-	padding: 1em 0;
-	width: 100%;
-}
 
-.menu{
-	display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 12px;
-}
-.menu ul{
-	margin: 0;
-	margin-right: 1em;
-	padding: 0;
-}
-.menu li{
-	display: inline-block;
-	font-size: 23px;
-	padding: 0 .5em;
-}
 
-.menu a{
-	color: #fff;
-	text-decoration: none;
-	padding: 1em .5em;
-}
-.logotipo{
-	margin: 0;
-	padding: 0;
-	display: inline-block;
-	margin-left: 20px;
-}
 
 .footer{
 	text-align: center;
 	background: #273b47;
 	padding: 10px 0;
 }
-.contacto a{
-	text-decoration: none;
-	color: #fff;
-	text-decoration: underline;
-	padding: 5px;
+	.contacto a{
+		text-decoration: none;
+		color: #fff;
+		text-decoration: underline;
+		padding: 5px;
+	}
+	.contacto a{
+		display: block;
+	}
+	.contacto span{
+		display: block;
+	}
+
+
+
+
+
+.header{
+	position: relative;	
 }
-.contacto, a, span{
-	display: block;
-}
+
+	.background{
+		background: url("../images/background.png");
+		background-size: cover;
+	}
+	.contenedor{
+		width: 800px;
+		margin: auto;
+		position: relative;
+	}
+	.menu{
+		font-size: 24px;
+		display: inline-block;
+		position: absolute;
+		right: 0;
+	}
+	.menu li {
+		display: inline-block;
+		margin-left: 5px;
+	}
+	.menu li:before{
+		content: '∘';
+		font-size: 50px;
+		line-height: 20px;
+		color: #fff;
+	}
+	.menu a{
+		color: #fff;
+		text-decoration: none;
+	}
+	.logotipo{
+		display: inline-block;
+		margin-left: 0;
+	}

@@ -1,13 +1,16 @@
-
 body{
-	margin: 0;	
+	margin: 0;
+	padding: 0;
+	background: #efeff4;
 	font-family: 'Monserrat', sans-serif;
 }
+
 .content{
+	min-height: 70vh;
 	text-align: center;
 	margin: 0 auto;
 	width: 400px;
-	height: 380px;
+	height: 400px;
 	display: flex;
 	align-items: center;
 }
@@ -28,56 +31,73 @@ body{
 	color: #fff;
 }
 
-.header{
-	background: #273b47;
-	padding: 1em 0;
+
+
+
+
+
+.position{
+	position: absolute;
+	bottom: 0;
 	width: 100%;
-	line-height: 10px;
+}
+.footer{
+	text-align: center;
+	background: #273b47;
+	padding: 10px 0;
+}
+	.contacto a{
+		text-decoration: none;
+		color: #fff;
+		text-decoration: underline;
+		padding: 5px;
+	}
+	.contacto a{
+		display: block;
+	}
+	.contacto span{
+		display: block;
+	}
+
+
+
+
+
+.header{
+	position: relative;	
 }
 
+	.background{
+		background: url("../images/background.png");
+		background-size: cover;
+	}
+	.contenedor{
+		width: 800px;
+		margin: auto;
+		position: relative;
+	}
+	
 .menu{
 	font-size: 24px;
 	display: inline-block;
 	position: absolute;
 	right: 0;
-	top: 8px;
-	padding: .5em 0;
 }
-.menu ul{
-	margin: 0;
-	padding: 0;
-	margin-right: 20px;
-}
-.menu li{
-	display: inline-block;
-	margin-left: 30px;
-}
-
-.menu a{
-	color: #fff;
-	text-decoration: none;
-	padding: 1em 0;
-}
-.logotipo{
-	display: inline-block;
-	margin: 0;
-	margin-left: 20px;
-}
-
-.footer{
-	width: 100%;
-	text-align: center;
-	background: #273b47;
-	padding: 10px 0;
-	position: absolute;
-	bottom: 0;
-}
-.contacto a{
-	text-decoration: none;
-	color: #fff;
-	text-decoration: underline;
-	padding: 5px;
-}
-.contacto, a, span{
-	display: block;
-}
+	.menu li {
+		display: inline-block;
+		margin-left: 5px;
+	}
+	.menu li:before{
+		content: '∘';
+		font-size: 50px;
+		line-height: 20px;
+		color: #fff;
+	}
+	.menu a{
+		color: #fff;
+		text-decoration: none;
+	}
+	.logotipo{
+		display: inline-block;
+		margin-left: 0;
+	}
