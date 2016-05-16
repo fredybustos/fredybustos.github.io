@@ -5,6 +5,7 @@
 	<title>Precios de tus mejores guitarras</title>
 	<link rel="stylesheet" href="css/invie.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat|Allerta' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
 	<header id="header" class="header background"> <!-- header -->
@@ -12,7 +13,8 @@
 			<figure class="logotipo"> <!-- logotipo -->
 				<img src="images/invie.png" alt="invie logo" width="186" height="60">
 			</figure>
-			<nav class="menu"><!--  menu -->
+		<span class="burguer-button icon-menu" id="burguer-button"></span>
+			<nav class="menu" id="menu"><!--  menu -->
 				<ul>
 					<li>
 						<a href="index.html">home</a>
@@ -39,6 +41,9 @@
 					<th>Modelo</th>
 					<th>Precio</th>
 					<th>Descripcion</th>
+					<th>Modelo</th>
+					<th>Precio</th>
+					<th>Descripcion</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -46,8 +51,6 @@
 					<td>Invie classic</td>
 					<td>1000</td>
 					<td>Una guotarra muy pro</td>
-				</tr>
-				<tr>
 					<td>Invie classic</td>
 					<td>1000</td>
 					<td>Una guotarra muy pro</td>
@@ -56,8 +59,6 @@
 					<td>Invie classic</td>
 					<td>1000</td>
 					<td>Una guotarra muy pro</td>
-				</tr>
-				<tr>
 					<td>Invie classic</td>
 					<td>1000</td>
 					<td>Una guotarra muy pro</td>
@@ -66,8 +67,30 @@
 					<td>Invie classic</td>
 					<td>1000</td>
 					<td>Una guotarra muy pro</td>
+					<td>Invie classic</td>
+					<td>1000</td>
+					<td>Una guotarra muy pro</td>
 				</tr>
 				<tr>
+					<td>Invie classic</td>
+					<td>1000</td>
+					<td>Una guotarra muy pro</td>
+					<td>Invie classic</td>
+					<td>1000</td>
+					<td>Una guotarra muy pro</td>
+				</tr>
+				<tr>
+					<td>Invie classic</td>
+					<td>1000</td>
+					<td>Una guotarra muy pro</td>
+					<td>Invie classic</td>
+					<td>1000</td>
+					<td>Una guotarra muy pro</td>
+				</tr>
+				<tr>
+					<td>Invie classic</td>
+					<td>1000</td>
+					<td>Una guotarra muy pro</td>
 					<td>Invie classic</td>
 					<td>1000</td>
 					<td>Una guotarra muy pro</td>
@@ -127,5 +150,50 @@
 				</form>
 			</div>
 		</footer>
+		<script>
+
+			var consulta = window.matchMedia('(max-width: 500px)');
+			consulta.addListener(mediaQuery)
+			var $burguerButton = document.getElementById('burguer-button');
+			var $menu = document.getElementById('menu');
+
+			function toggleMenu(){
+				$menu.classList.toggle("active")
+			};
+
+			function mediaQuery(){
+				if (consulta.matches){
+					console.log('se cumple');
+					// si se cumple ejecute
+
+				$burguerButton.addEventListener('touchstart', toggleMenu);
+
+				$burguerButton.addEventListener('click', function() {
+					$menu.classList.toggle("active");
+				});
+
+				} else {
+
+				$burguerButton.removeEventListener('touchstart', toggleMenu);
+					console.log('no se cumple');
+					// si no se ciumple ejecute
+				}
+			}
+			mediaQuery();
+
+			// lazy blading
+			var bLazy = new Blazy({
+				selector: 'img'
+			});
+
+			// $burguerButton.addEventListener('touchstart', toggleMenu);
+			
+			
+
+			// $burguerButton.addEventListener('click', function() {
+			// 	$menu.classList.toggle("active");
+			// });
+
+		</script>
 </body>
 </html>
