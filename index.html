@@ -135,49 +135,9 @@
 				</form>
 			</div>
 		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
-		<script>
-
-			var consulta = window.matchMedia('(max-width: 500px)');
-			consulta.addListener(mediaQuery)
-			var $burguerButton = document.getElementById('burguer-button');
-			var $menu = document.getElementById('menu');
-
-			function toggleMenu(){
-				$menu.classList.toggle("active")
-			};
-
-			function mediaQuery(){
-				if (consulta.matches){
-					// si se cumple ejecute
-
-				$burguerButton.addEventListener('touchstart', toggleMenu);
-
-				$burguerButton.addEventListener('click', function() {
-					$menu.classList.toggle("active");
-				});
-
-				} else {
-
-				$burguerButton.removeEventListener('touchstart', toggleMenu);
-					// si no se ciumple ejecute
-				}
-			}
-			mediaQuery();
-
-			// lazy blading
-			var bLazy = new Blazy({
-				selector: 'img'
-			});
-
-			// $burguerButton.addEventListener('touchstart', toggleMenu);
-			
-			
-
-			// $burguerButton.addEventListener('click', function() {
-			// 	$menu.classList.toggle("active");
-			// });
-
-		</script>
+		<script src="js/index.js"></script>
 	</body>
 </html>
