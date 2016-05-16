@@ -1,3 +1,43 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?6hakpr');
+    src:    url('../fonts/icomoon.eot?6hakpr#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?6hakpr') format('truetype'),
+        url('../fonts/icomoon.woff?6hakpr') format('woff'),
+        url('../fonts/icomoon.svg?6hakpr#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+    content: "\e900";
+}
+.icon-phone:before {
+    content: "\e901";
+}
+.icon-menu:before {
+    content: "\e902";
+}
+.icon-cancel-circle:before {
+    content: "\e903";
+}
+
+
 body{
 	margin: 0;
 	padding: 0;
@@ -16,7 +56,6 @@ body{
 }
 .content div{
 	background: #efeff4;
-	border: 2px dashed orange;
 	transition: 1s;
 
 }
@@ -66,6 +105,22 @@ body{
 .header{
 	position: relative;	
 }
+	.burguer-button{
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 50%;
+		background-color: #395667;
+		display: inline-block;
+		text-align: center;
+		cursor: pointer;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		z-index: 3;
+		color: #fff;
+		display: none;
+	}
 
 	.background{
 		background: url("../images/background.png");
@@ -101,3 +156,99 @@ body{
 		display: inline-block;
 		margin-left: 0;
 	}
+
+
+
+
+@media screen and (max-width: 800px){
+	/* header*/
+		.contenedor{
+			width: auto;
+		}
+		.menu{
+			right: 20px;
+		}
+		.logotipo{
+			margin-left: 20px;
+		}
+
+}
+
+
+@media screen and (max-width: 667px){
+	.header{
+		text-align: center;
+		padding: 1em 0 .3em 0;
+	}
+			.logotipo{
+				margin: 0;
+			}
+			.menu{
+				position: static;
+				display: block;
+
+			}
+			.menu ul{
+				padding: 0;
+			}
+			.menu li:first-child{
+				margin: 0;
+			}
+			.menu li:before{
+			    content: '∘';
+				font-size: 30px;
+			}
+		
+}
+
+
+@media screen and (max-width: 500px){
+	
+	.portada{
+		text-align: center;
+	}
+			.header {
+				position: static;
+			}
+			.header .contenedor{
+				position: static;
+			}
+			.portada .contenedor{
+				position: static;
+			}
+			.burguer-button{
+				display: block;
+			}
+			.menu{
+				background-color: rgba(255, 60, 88, .8);
+				bottom: 0;
+				left: -100%;
+				position: absolute;
+				right: 0;
+				top: 0;
+				z-index: 2;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				transition: .3s;
+			}
+				.menu.active{
+					left: 0;
+				}
+
+			.menu ul{
+				flex: 1;
+			}
+			.menu li{
+				display: block;
+				margin: 0;
+				padding: 8px 0;
+				border-bottom: 1px solid #fff;
+			}
+			.menu li:before{
+				display: none;
+			}
+			.menu li:first-child{
+				border-top: 1px solid #fff; 
+			}
+}

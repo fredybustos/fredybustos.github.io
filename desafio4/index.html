@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat|Allerta' rel='stylesheet' type='text/css'>
 	<link rel="icon" type="image/png" href="../images/favicon2.png">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
 	<header id="header" class="header background"> <!-- header -->
@@ -13,7 +14,9 @@
 			<figure class="logotipo"> <!-- logotipo -->
 				<img src="../images/invie.png" alt="invie logo" width="186" height="60">
 			</figure>
-			<nav class="menu"><!--  menu -->
+		<span class="burguer-button icon-menu" id="burguer-button"></span>
+
+			<nav class="menu" id="menu"><!--  menu -->
 				<ul>
 					<li>
 						<a href="../index.html">home</a>
@@ -47,5 +50,8 @@
 			</a>
 		</div>
 	</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
+		<script src="../js/index.js"></script>
 </body>
 </html>

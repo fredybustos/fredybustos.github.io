@@ -188,6 +188,7 @@ input:focus, textarea:focus{
 			left: 20px;
 			z-index: 3;
 			color: #fff;
+			display: none;
 		}
 		
 		.button{
@@ -398,6 +399,7 @@ input:focus, textarea:focus{
 @media screen and (max-width: 667px){
 	.header{
 		text-align: center;
+		padding: 1em 0 .3em 0;
 	}
 			.logotipo{
 				margin: 0;
@@ -444,6 +446,9 @@ input:focus, textarea:focus{
 			}
 			.portada .contenedor{
 				position: static;
+			}
+			.burguer-button{
+				display: block;
 			}
 			.menu{
 				background-color: rgba(255, 60, 88, .8);
