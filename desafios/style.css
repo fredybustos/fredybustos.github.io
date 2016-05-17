@@ -81,7 +81,7 @@
 		display: inline-block;
 		text-align: center;
 		cursor: pointer;
-		position: absolute;
+		position: fixed;
 		top: 20px;
 		left: 20px;
 		z-index: 3;
@@ -216,7 +216,7 @@
 				background-color: rgba(255, 60, 88, .8);
 				bottom: 0;
 				left: -100%;
-				position: absolute;
+				position: fixed;
 				right: 0;
 				top: 0;
 				z-index: 2;

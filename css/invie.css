@@ -69,6 +69,16 @@ input, textarea{
 input:focus, textarea:focus{
 	background: lightgray;	
 }
+.video-demo{
+	max-width: 500px;
+	width: 100%;
+	border: 5px solid #3c5b6e;
+}
+.video-demo-content{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
 .background{
 	background: url("../images/background.png");
 	background-size: cover;
@@ -183,7 +193,7 @@ input:focus, textarea:focus{
 			display: inline-block;
 			text-align: center;
 			cursor: pointer;
-			position: absolute;
+			position: fixed;
 			top: 20px;
 			left: 20px;
 			z-index: 3;
@@ -311,6 +321,9 @@ input:focus, textarea:focus{
 	/* portada */	
 			
 		/* guitarras */
+		.video-demo-content{
+			margin-bottom: 30px;
+		}
 		.guitarras{
 			text-align: center;
 		}
@@ -435,9 +448,16 @@ input:focus, textarea:focus{
 
 
 @media screen and (max-width: 500px){
+	/*.video-demo{
+		margin: 0 10px;
+	}*/
 	.portada{
 		text-align: center;
 	}
+			.portada .button{
+				display: block;
+			}
+
 			.header {
 				position: static;
 			}
@@ -454,7 +474,7 @@ input:focus, textarea:focus{
 				background-color: rgba(255, 60, 88, .8);
 				bottom: 0;
 				left: -100%;
-				position: absolute;
+				position: fixed;
 				right: 0;
 				top: 0;
 				z-index: 2;
@@ -505,6 +525,10 @@ input:focus, textarea:focus{
 			.penta img{
 				width: 100%;
 			}
+
+	.col2{
+		align-items: stretch;			
+	}
 
 }
 
