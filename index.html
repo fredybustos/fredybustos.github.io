@@ -4,9 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Invie - tus mejores guitarras</title>
 	<!-- <link rel="stylesheet"  media="(max-width: 800px)" href="css/media-querie.css"> -->
-	<link href='https://fonts.googleapis.com/css?family=Montserrat|Allerta' rel='stylesheet' type='text/css'>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Montserrat|Allerta' rel='stylesheet' type='text/css'> -->
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
+<style>
+@font-face{font-family:'icomoon';src:url(./fonts/icomoon.eot?6hakpr);src:url(./fonts/icomoon.eot?6hakpr#iefix) format("embedded-opentype"),url(./fonts/icomoon.ttf?6hakpr) format("truetype"),url(./fonts/icomoon.woff?6hakpr) format("woff"),url(./fonts/icomoon.svg?6hakpr#icomoon) format("svg");font-weight:400;font-style:normal}[class*=" icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-menu:before{content:"\e902"}body{font-family:'Allerta',sans-serif;letter-spacing:3px;font-weight:300;color:#000;margin:0}.video-demo{max-width:500px;width:100%;border:5px solid #3c5b6e}.video-demo-content{display:flex;justify-content:center;margin-bottom:100px}.background{background:url(./images/background.png);background-size:cover}.contenedor{max-width:800px;margin:auto;position:relative}.titulo{font-size:70px;font-family:'Montserrat',sans-serif;margin-bottom:0;margin-top:70px}.titulo span{text-decoration:underline}.guitarras{color:#1f313c;margin-bottom:60px}.guitarras h2{font-size:35px}.portada{color:#fff;padding:20px;height:500px}.header{position:relative}.menu{font-size:24px;display:inline-block;position:absolute;right:0}.menu li{display:inline-block;margin-left:5px}.menu li:before{content:'∘';font-size:50px;line-height:20px;color:#fff}.menu a{color:#fff;text-decoration:none}.logotipo{display:inline-block;margin-left:0}.right{float:right;position:relative;top:-180px}.burguer-button{width:40px;height:40px;line-height:40px;border-radius:50%;background-color:#395667;display:inline-block;text-align:center;position:fixed;top:20px;left:20px;z-index:3;color:#fff;display:none}.button{border-radius:12px;border:none;padding:7px 12px;color:#fff;background:#fd324e;font-size:18px;text-decoration:none;background:linear-gradient(to left,#fe344e,#ff7250)}@media screen and (max-width: 800px){.portada{height:auto}.titulo{font-size:45px;margin-top:30px}.title-a{font-size:18px}.portada .button{margin-bottom:30px;display:inline-block}.video-demo-content{margin-bottom:30px}.guitarras{text-align:center}.right{float:none;position:static}}@media screen and (max-width: 667px){.header{text-align:center;padding:1em 0 .3em}.logotipo{margin:0}.menu{position:static;display:block}.menu ul{padding:0}.menu li:first-child{margin:0}.menu li:before{content:'∘';font-size:30px}}@media screen and (max-width: 500px){.portada{text-align:center}.portada .button{display:block}.header{position:static}.portada .contenedor{position:static}.burguer-button{display:block}.menu{background-color:rgba(255,60,88,.8);bottom:0;left:-100%;position:fixed;right:0;top:0;z-index:2;width:100%;display:flex;align-items:center}.menu ul{flex:1}.menu li{display:block;margin:0;padding:8px 0;border-bottom:1px solid #fff}.menu li:before{display:none}.menu li:first-child{border-top:1px solid #fff}.titulo{font-size:30px}.guitarra img{width:200px}}.video-responsive-contenedor{position:relative;padding-top:56.25%}.video-responsive-src{position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%}
+</style>
 <body>
 	<section id="portada" class="portada background"> <!-- portada -->
 	<header id="header" class="header contenedor"> <!-- header -->
@@ -138,7 +141,19 @@
 				</form>
 			</div>
 		</footer>
-
+			<script type="text/javascript">
+				  WebFontConfig = {
+				    google: { families: [ 'Montserrat:400,700:latin', 'Allerta::latin' ] }
+				  };
+				  (function() {
+				    var wf = document.createElement('script');
+				    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+				    wf.type = 'text/javascript';
+				    wf.async = 'true';
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(wf, s);
+				  })(); 
+			  </script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
 		<script src="js/index.js"></script>
