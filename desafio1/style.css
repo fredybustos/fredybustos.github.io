@@ -250,6 +250,20 @@ i{
 		}
 
 
+@media screen and (max-width: 667px){
+	.container{
+	width: 100%;
+	}
+		.post{
+			width: 100%;
+		}
+
+	
+	.sub-header-title{
+		width: 80%;
+	}
+}
+
 
 
 

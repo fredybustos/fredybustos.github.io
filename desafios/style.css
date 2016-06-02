@@ -39,10 +39,14 @@
 }
 
 
-.position{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #efeff4;
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
 }
 
 
@@ -123,7 +127,6 @@
 		margin-left: 0;
 	}
 .container{
-	min-height: 70vh;
 	width: 90%;
 	margin: 0 auto;
 	margin-top: 1em;
@@ -131,11 +134,13 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-
+	flex: 1;
 }
 		.post{
 			width: 45%;
 			margin-bottom: 2em;
+			padding-bottom: 10px;
+			background: #d9d9d9;
 		}
 		.post h2{
 			color: #1F313C;
@@ -191,6 +196,11 @@
 			    content: '∘';
 				font-size: 30px;
 			}
+	.post{
+		width: auto;
+		padding-bottom: 10px;
+		background: #d9d9d9;
+	}
 		
 }
 

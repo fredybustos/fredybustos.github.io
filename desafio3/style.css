@@ -45,16 +45,18 @@ body{
 	margin: 0;
 	background: #efeff4;
 	font-family: 'Monserrat', sans-serif;
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
 }
 
 .desafio3{
-	position: relative;
-	margin: 1em 0 2em 0; 
+	flex: 1;
 	text-align: center;
 	border: 4px solid orange;
-	padding: 4em 0;
-	overflow: hidden;
+	padding: 2em 0;
 	transition: .3s;
+
 }
 .desafio3:hover{
 	background: #fff;
@@ -69,14 +71,16 @@ body{
 	transform: rotate(360deg) scale(1.2);
 }
 .desafio3 p{
+	color: transparent;
+	margin: 0;
 	transition: 1s;
 	transform: translateY(200px);
 }
 .desafio3:hover p{
 	color: orange;
+	margin-top: 1em;
 	font-size: 40px;
 	transform: translateY(0);
-
 }
 
 
@@ -139,12 +143,9 @@ body{
 	}
 
 .position{
-	position: absolute;
-	bottom: -60px;
 	width: 100%;
 }
 .footer{
-	margin-top: 2em;
 	text-align: center;
 	background: #273b47;
 	padding: 10px 0;

@@ -46,11 +46,14 @@ body{
 	padding: 0;
 	background: #efeff4;
 	font-family: 'Monserrat', sans-serif;
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
 }
 
 .content{
-	width: 90%;
 	padding: 0 20px;
+	flex: 1;
 	
 }
 .content h1{
@@ -59,8 +62,6 @@ body{
 }
 
 .position{
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 }
 
@@ -236,3 +237,6 @@ body{
 				border-top: 1px solid #fff; 
 			}
 }
+
+
+

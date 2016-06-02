@@ -43,16 +43,17 @@ body{
 	padding: 0;
 	background: #efeff4;
 	font-family: 'Monserrat', sans-serif;
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
 }
 
 .content{
-	min-height: 70vh;
-	text-align: center;
 	margin: 0 auto;
-	width: 400px;
-	height: 400px;
+	width: 90%;
 	display: flex;
 	align-items: center;
+	flex: 1;
 }
 .content div{
 	background: #efeff4;
